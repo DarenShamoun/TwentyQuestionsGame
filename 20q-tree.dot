@@ -1,0 +1,38 @@
+digraph {
+    splines=line
+    size="6,8" 
+    nodesep=0.1
+    ranksep=0.25
+    edge [weight=1, label="No"]
+    node [ style=filled, fillcolor=lightblue, fontsize=12]
+
+    L->LL
+    LM [style=invis]
+    L->LM [style=invis weight=100]
+    L->LR [label="Yes"]
+    M [style=invis]
+    R->RL
+    RM [style=invis]
+    R->RM [style=invis weight=100]
+    R->RR [label="Yes"]
+    RRL
+    RRM [style=invis]
+    RRR
+    RR->RRL
+    RR->RRM [style=invis weight=100]
+    RR->RRR [label="Yes"]
+    0->L
+    0->M [style=invis weight=100]
+    0->R [label="Yes"]
+    0 [label="Is it bigger than\na breadbox?"];
+    L [label="Do you eat it\nwith eggs?"];
+    LL [label="a mouse" shape=box, fillcolor=lightyellow];
+    LR [label="spam" shape=box, fillcolor=lightyellow];
+    R [label="Is it worth\na lot of money?"];
+    RL [label="a bag of trash" shape=box, fillcolor=lightyellow];
+    RR [label="Does it write code?"];
+    RRL [label="a house" shape=box, fillcolor=lightyellow];
+    RRR [label="a programmer" shape=box, fillcolor=lightyellow];
+}
+
+
