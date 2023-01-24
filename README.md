@@ -112,7 +112,3 @@ Game saved.
 Goodbye!
 
 ```
-
-
-
-
